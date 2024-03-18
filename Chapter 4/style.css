@@ -1,0 +1,30 @@
+h1 {
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    animation-name: rabarband;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: none;
+    animation-direction: normal;
+    animation-play-state: running;
+    animation-iteration-count: infinite;
+}
+
+@keyframes rabarband {
+
+    0%,
+    100% {
+        color: brown;
+    }
+
+    25% {
+        transform: scaleX(2);
+        color: cornflowerblue;
+    }
+
+    50% {
+        color: blue;
+
+    }
+}

@@ -1,0 +1,37 @@
+.heading {
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    font-family: 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    animation-name: beautiful;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: none;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-play-state: running;
+}
+
+@keyframes beautiful {
+
+    0%,
+    100% {
+        color: yellowgreen;
+        /* transform: rotate(360deg); */
+    }
+
+    25% {
+        transform: scale(2);
+    }
+
+    50% {
+        transform: rotate(360deg);
+        color: coral;
+    }
+
+    75% {
+        color: olive;
+        /* transform: scaleX(3); */
+    }
+}
