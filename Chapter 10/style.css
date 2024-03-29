@@ -1,0 +1,33 @@
+h1 {
+    position: relative;
+    font-weight: bold;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    animation-name: amir;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: none;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-play-state: running;
+    text-align: center;
+}
+
+h1::before {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(to bottom right, green 30%, blue 100%);
+}
+
+@keyframes amir {
+
+    0%,
+    100% {
+        color: crimson;
+    }
+
+    50% {
+        transform: scaleX(2);
+
+    }
+}
